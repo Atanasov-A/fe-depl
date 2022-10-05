@@ -40,10 +40,9 @@ const RoutesComponent = () => {
         <Route
           path="/"
           element={
-            <div>Deployed!</div>
-            // <ProtectedRoute>
-            //   <Navigate replace to="/add-route" />
-            // </ProtectedRoute>
+            <ProtectedRoute>
+              <Navigate replace to="/add-route" />
+            </ProtectedRoute>
           }
         />
         <Route
